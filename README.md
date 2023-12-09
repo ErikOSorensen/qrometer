@@ -22,9 +22,13 @@ There will be three connectors to this box:
 2. RF Antenna-side (N-connector).
 3. Power supply and signal out (GX16, also known as the "Aviation connector") with four pins: 
    1. GND
-   2. 12V
+   2. 12V (could be as low as 7V without a problem)
    3. Forward power voltage (AD8307 voltage out)
    4. Reflected power voltage (AD8307 voltage out)
+
+The sensor board must be mounted at least 12 mm above the bottom of the case to
+accommodate the larger of the transformers, which protrude on the bottom of the
+board.
 
 ## Controller and Display
 
@@ -33,4 +37,9 @@ and reflected power, to display power and return loss to a display, and I want a
 an ethernet adapter such that the meter can post how much power is transmitted
 to a log on a database server.
 
-
+The [Wiznet Pi Pico](https://www.wiznet.io/product-item/w5500-evb-pico/), is a 
+candidate microcontroller devboard which can be soldered onto a board, and then
+programmed in Micro Python. There are MQTT libraries for posting transmitted
+power to a logging database when the meter is on, and there are 12-bit ADCs which
+take an external reference voltage for the digitization of the output of the AD8307
+from the sensor board. I have a couple of these on and delivered from Mouser.
