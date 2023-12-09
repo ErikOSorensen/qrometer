@@ -20,11 +20,11 @@ There will be three connectors to this box:
 
 1. RF Radio-side (N-connector).
 2. RF Antenna-side (N-connector).
-3. Power supply and signal out (GX16, also known as the "Aviation connector") with four pins: 
-   1. GND
-   2. 12V (could be as low as 7V without a problem)
-   3. Forward power voltage (AD8307 voltage out)
-   4. Reflected power voltage (AD8307 voltage out)
+3. Power supply and signal out (GX16, also known as the "Aviation connector") with four pins:
+   1. GND, blue in cable
+   2. 12V (could be as low as 7V without a problem), green in cable
+   3. Forward power voltage (AD8307 voltage out), yellow in cable
+   4. Reflected power voltage (AD8307 voltage out), brown in cable
 
 The sensor board must be mounted at least 12 mm above the bottom of the case to
 accommodate the larger of the transformers, which protrude on the bottom of the
